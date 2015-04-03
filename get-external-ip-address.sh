@@ -8,7 +8,7 @@ else
   CACHED_ADDRESS="UNCACHED"
 fi
 
-if [[ "x$EXTERNAL_ADDRESS"!="x$CACHED_ADDRESS" ]]; then
+if [[ "x$EXTERNAL_ADDRESS" != "x$CACHED_ADDRESS" ]]; then
   echo -n $EXTERNAL_ADDRESS > cached
   git add .
   git commit -a -m "update external ip address from $CACHED_ADDRESS to $EXTERNAL_ADDRESS"
