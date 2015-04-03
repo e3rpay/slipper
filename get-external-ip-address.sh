@@ -12,5 +12,6 @@ if [[ "x$EXTERNAL_ADDRESS"!="x$CACHED_ADDRESS" ]]; then
   echo -n $EXTERNAL_ADDRESS > cached
 fi
 
+git add .
 git commit -a -m "update external ip address from $CACHED_ADDRESS to $EXTERNAL_ADDRESS"
 git push origin master
