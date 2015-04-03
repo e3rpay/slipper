@@ -1,1 +1,1 @@
-a dynamic dns tool
+find my external ip address
